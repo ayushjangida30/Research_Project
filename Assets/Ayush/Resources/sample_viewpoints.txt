@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "sample_viewpoints",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::26910" } },
+"features": [
+{ "type": "Feature", "properties": { "NAME": "Ionut's House", "OFFSETA": 0, "OFFSETB": 0, "CREATED_US": null, "CREATED_DA": null, "LAST_EDITE": null, "LAST_EDI_1": null }, "geometry": { "type": "Point", "coordinates": [ 529901.0, 5452818.0 ] } },
+{ "type": "Feature", "properties": { "NAME": "Jerry Sulina Park", "OFFSETA": 0, "OFFSETB": 0, "CREATED_US": null, "CREATED_DA": null, "LAST_EDITE": null, "LAST_EDI_1": null }, "geometry": { "type": "Point", "coordinates": [ 526333.900000005960464, 5454690.0 ] } },
+{ "type": "Feature", "properties": { "NAME": "232&Dedwney", "OFFSETA": 0, "OFFSETB": 0, "CREATED_US": null, "CREATED_DA": null, "LAST_EDITE": null, "LAST_EDI_1": null }, "geometry": { "type": "Point", "coordinates": [ 530642.900000005960464, 5452041.0 ] } },
+{ "type": "Feature", "properties": { "NAME": "E111", "OFFSETA": 15, "OFFSETB": 30, "CREATED_US": null, "CREATED_DA": null, "LAST_EDITE": null, "LAST_EDI_1": null }, "geometry": { "type": "Point", "coordinates": [ 530591.099999994039536, 5461515.299999997019768 ] } },
+{ "type": "Feature", "properties": { "NAME": "LMT", "OFFSETA": 20, "OFFSETB": 0, "CREATED_US": null, "CREATED_DA": null, "LAST_EDITE": null, "LAST_EDI_1": null }, "geometry": { "type": "Point", "coordinates": [ 531086.5, 5459520.900000005960464 ] } },
+{ "type": "Feature", "properties": { "NAME": "224&Dedwney", "OFFSETA": 0, "OFFSETB": 0, "CREATED_US": null, "CREATED_DA": null, "LAST_EDITE": null, "LAST_EDI_1": null }, "geometry": { "type": "Point", "coordinates": [ 529029.0, 5452043.0 ] } },
+{ "type": "Feature", "properties": { "NAME": "240&Dedwney", "OFFSETA": 0, "OFFSETB": 0, "CREATED_US": null, "CREATED_DA": null, "LAST_EDITE": null, "LAST_EDI_1": null }, "geometry": { "type": "Point", "coordinates": [ 532253.0, 5452044.0 ] } },
+{ "type": "Feature", "properties": { "NAME": "224&122", "OFFSETA": 0, "OFFSETB": 0, "CREATED_US": null, "CREATED_DA": null, "LAST_EDITE": null, "LAST_EDI_1": null }, "geometry": { "type": "Point", "coordinates": [ 529025.900000005960464, 5452436.0 ] } },
+{ "type": "Feature", "properties": { "NAME": "203&Dedwney", "OFFSETA": 0, "OFFSETB": 0, "CREATED_US": null, "CREATED_DA": null, "LAST_EDITE": null, "LAST_EDI_1": null }, "geometry": { "type": "Point", "coordinates": [ 525050.900000005960464, 5454446.0 ] } },
+{ "type": "Feature", "properties": { "NAME": "Pitt River Bridge", "OFFSETA": 0, "OFFSETB": 0, "CREATED_US": null, "CREATED_DA": null, "LAST_EDITE": null, "LAST_EDI_1": null }, "geometry": { "type": "Point", "coordinates": [ 520004.0, 5454348.0 ] } },
+{ "type": "Feature", "properties": { "NAME": "Loon lake Dock", "OFFSETA": 0, "OFFSETB": 0, "CREATED_US": null, "CREATED_DA": null, "LAST_EDITE": null, "LAST_EDI_1": null }, "geometry": { "type": "Point", "coordinates": [ 529901.700000002980232, 5461426.0 ] } },
+{ "type": "Feature", "properties": { "NAME": "Fire Hall 3", "OFFSETA": 20, "OFFSETB": 15, "CREATED_US": null, "CREATED_DA": null, "LAST_EDITE": null, "LAST_EDI_1": null }, "geometry": { "type": "Point", "coordinates": [ 524827.400000005960464, 5451613.599999994039536 ] } },
+{ "type": "Feature", "properties": { "NAME": "Old Weather Tower on F60", "OFFSETA": 0, "OFFSETB": 0, "CREATED_US": "SDE", "CREATED_DA": "2017-06-26", "LAST_EDITE": "SDE", "LAST_EDI_1": "2017-06-26" }, "geometry": { "type": "Point", "coordinates": [ 532191.200000002980232, 5461736.5 ] } }
+]
+}

@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "KOP_Points",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::26910" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "OFFSETA": 0, "OFFSETB": 0, "IMPORTANCE": 1 }, "geometry": { "type": "Point", "coordinates": [ 529901.0, 5452818.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 2, "OFFSETA": 0, "OFFSETB": 0, "IMPORTANCE": 2 }, "geometry": { "type": "Point", "coordinates": [ 526333.900000005960464, 5454690.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 3, "OFFSETA": 0, "OFFSETB": 0, "IMPORTANCE": 2 }, "geometry": { "type": "Point", "coordinates": [ 530642.900000005960464, 5452041.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 4, "OFFSETA": 15, "OFFSETB": 30, "IMPORTANCE": 1 }, "geometry": { "type": "Point", "coordinates": [ 530591.099999994039536, 5461515.299999997019768 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 5, "OFFSETA": 20, "OFFSETB": 0, "IMPORTANCE": 1 }, "geometry": { "type": "Point", "coordinates": [ 531086.5, 5459520.900000005960464 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 6, "OFFSETA": 0, "OFFSETB": 0, "IMPORTANCE": 2 }, "geometry": { "type": "Point", "coordinates": [ 529029.0, 5452043.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 7, "OFFSETA": 0, "OFFSETB": 0, "IMPORTANCE": 1 }, "geometry": { "type": "Point", "coordinates": [ 532253.0, 5452044.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 8, "OFFSETA": 0, "OFFSETB": 0, "IMPORTANCE": 1 }, "geometry": { "type": "Point", "coordinates": [ 529025.900000005960464, 5452436.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 9, "OFFSETA": 0, "OFFSETB": 0, "IMPORTANCE": 3 }, "geometry": { "type": "Point", "coordinates": [ 525050.900000005960464, 5454446.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 10, "OFFSETA": 0, "OFFSETB": 0, "IMPORTANCE": 1 }, "geometry": { "type": "Point", "coordinates": [ 520004.0, 5454348.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 11, "OFFSETA": 0, "OFFSETB": 0, "IMPORTANCE": 1 }, "geometry": { "type": "Point", "coordinates": [ 529901.700000002980232, 5461426.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 12, "OFFSETA": 20, "OFFSETB": 15, "IMPORTANCE": 3 }, "geometry": { "type": "Point", "coordinates": [ 524827.400000005960464, 5451613.599999994039536 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 13, "OFFSETA": 0, "OFFSETB": 0, "IMPORTANCE": 1 }, "geometry": { "type": "Point", "coordinates": [ 532191.200000002980232, 5461736.5 ] } }
+]
+}

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - 3D_Terrain
+  - 2D_Terrain
+  - 3D_Terrain_Camera
+  - 2D_Terrain_Camera
+  - 2D_Cube_3D_Terrain
+  - 2D_Cube_2D_Terrain
+  - viewpoints
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Terrain
+  - MKRF
+  - 3D_Terrain
+  - 2D_Terrain
+  - cube_3d_terrain_3d
+  - cube_3d_terrain_2d
+  - VQC_Mesh
+  - cube_2d_terrain_2d
+  - cube_2d_terrain_3d
+  - capsule_3d_terrain_3d
+  - capsule_3d_terrain_2d
+  - capsule_2d_terrain_3d
+  - capsule_2d_terrain_2d
+  - cube_2d_terrain_2d_2
+  - capsule_2d_terrain_2d_2
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
