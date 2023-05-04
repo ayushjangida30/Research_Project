@@ -1,7 +1,7 @@
 Shader "JL/KOP" {
     Properties {
         [PerRendererData] _Color("Color", Color) = (0, 0, 0, 1)
-        [PerRendererData] _Alpha("Alpha", float) = 0
+        [PerRendererData] _Alpha("Alpha", float) = 0.5
 
         [PerRendererData] _OutlineColor("OutlineColor", Color) = (0, 0, 0, 1)
         [PerRendererData] _OutlineWidth("OutlineWidth", float) = 0

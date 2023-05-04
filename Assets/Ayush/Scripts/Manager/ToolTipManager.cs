@@ -22,7 +22,14 @@ public class ToolTipManager : MonoBehaviour
     public void SetToolTip(string message, int message_2)  {
         print("ToolTip visible");
         gameObject.SetActive(true);
-        textToolTip.text = message + "/" + message_2;
+        textToolTip.text = message;
+    }
+
+    public void SetToolTip(string message, int message_2, Vector3 mousePosition)  {
+        print("ToolTip visible");
+        gameObject.SetActive(true);
+        textToolTip.text = message;
+        transform.position = mousePosition;
     }
 
     public void HideToolTip()   {

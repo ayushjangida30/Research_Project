@@ -11,6 +11,8 @@ TagManager:
   - 2D_Cube_3D_Terrain
   - 2D_Cube_2D_Terrain
   - viewpoints
+  - 3D_Cube_2D_Terrain_2
+  - 2D_Cube_2D_Terrain_2
   layers:
   - Default
   - TransparentFX
@@ -35,8 +37,8 @@ TagManager:
   - capsule_2d_terrain_2d
   - cube_2d_terrain_2d_2
   - capsule_2d_terrain_2d_2
-  - 
-  - 
+  - cube_3d_terrain_2d_2
+  - capsule_3d_terrain_2d_2
   - 
   - 
   - 

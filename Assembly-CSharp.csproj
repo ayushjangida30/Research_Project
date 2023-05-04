@@ -56,13 +56,18 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Ayush\Scripts\Controller\Bar\BarController.cs" />
+     <Compile Include="Assets\Ayush\Scripts\Controller\Border\BorderController.cs" />
      <Compile Include="Assets\Ayush\Scripts\Controller\Button\ButtonController.cs" />
      <Compile Include="Assets\Ayush\Scripts\Controller\Camera\_CameraController.cs" />
+     <Compile Include="Assets\Ayush\Scripts\Controller\Camera\CheckDistance.cs" />
      <Compile Include="Assets\Ayush\Scripts\Controller\Camera\Movement.cs" />
      <Compile Include="Assets\Ayush\Scripts\Controller\Camera\Movement2D.cs" />
+     <Compile Include="Assets\Ayush\Scripts\Controller\Camera\RayCastMethod.cs" />
      <Compile Include="Assets\Ayush\Scripts\Controller\Mesh\PolygonController.cs" />
      <Compile Include="Assets\Ayush\Scripts\Controller\Outline\OutlineController.cs" />
      <Compile Include="Assets\Ayush\Scripts\Controller\Viewpoint\ViewpointController.cs" />
+     <Compile Include="Assets\Ayush\Scripts\Experiment.cs" />
+     <Compile Include="Assets\Ayush\Scripts\ExportCSV.cs" />
      <Compile Include="Assets\Ayush\Scripts\GeoJson\centroid_reader.cs" />
      <Compile Include="Assets\Ayush\Scripts\GeoJson\outline_geojsonreader.cs" />
      <Compile Include="Assets\Ayush\Scripts\GeoJson\viewpoint_geojson.cs" />
@@ -75,9 +80,24 @@
      <Compile Include="Assets\Ayush\Scripts\Manager\TooltipViewpointManager.cs" />
      <Compile Include="Assets\Ayush\Scripts\Manager\ViewpointManager.cs" />
      <Compile Include="Assets\Ayush\Scripts\TaskController\AnswerController.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\Button\ControlInfoButton.cs" />
      <Compile Include="Assets\Ayush\Scripts\TaskController\Button\EnterButton.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\Button\Mouse_Pointer.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\Button\PhaseOneButtonController.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\Button\PhaseTwoButtonController.cs" />
      <Compile Include="Assets\Ayush\Scripts\TaskController\Button\StartButtonController.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\ComplexTask1.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\ComplexTask2.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\ComplexTask3.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\FreeMode.cs" />
      <Compile Include="Assets\Ayush\Scripts\TaskController\MainController.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\Terrain25DCube2D_Tasks.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\Terrain25DCube3D_Tasks.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\Terrain2DCube2D_Tasks.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\Terrain2DCube3D_Tasks.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\Terrain3DCube2D_Tasks.cs" />
+     <Compile Include="Assets\Ayush\Scripts\TaskController\Terrain3DCube3D_Tasks.cs" />
+     <Compile Include="Assets\Ayush\Standard Assets\eyelink.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -86,48 +106,19 @@
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-     <Compile Include="Assets\Scripts\_GlobalMethods.cs" />
-     <Compile Include="Assets\Scripts\_GlobalProperties.cs" />
-     <Compile Include="Assets\Scripts\_Singleton.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\Component\Bar\Controller.cs" />
-     <Compile Include="Assets\Scripts\Component\Bar\Manager.cs" />
-     <Compile Include="Assets\Scripts\Component\Link\Controller.cs" />
-     <Compile Include="Assets\Scripts\Component\Link\Manager.cs" />
-     <Compile Include="Assets\Scripts\Experiment.cs" />
-     <Compile Include="Assets\Scripts\FilterController.cs" />
-     <Compile Include="Assets\Scripts\ImageController.cs" />
-     <Compile Include="Assets\Scripts\InputController.cs" />
-     <Compile Include="Assets\Scripts\KOP\_FeatureCollectionObject.cs" />
-     <Compile Include="Assets\Scripts\KOP\_FeatureObject.cs" />
-     <Compile Include="Assets\Scripts\KOP\_FeaturePropertiesObject.cs" />
-     <Compile Include="Assets\Scripts\KOP\Controller.cs" />
-     <Compile Include="Assets\Scripts\KOP\Manager.cs" />
-     <Compile Include="Assets\Scripts\MKRF\_FeatureCollectionObject.cs" />
-     <Compile Include="Assets\Scripts\MKRF\_FeatureObject.cs" />
-     <Compile Include="Assets\Scripts\MKRF\_FeaturePropertiesObject.cs" />
-     <Compile Include="Assets\Scripts\MKRF\Line\Controller.cs" />
-     <Compile Include="Assets\Scripts\MKRF\Line\Manager.cs" />
-     <Compile Include="Assets\Scripts\MKRF\Polygon\Controller.cs" />
-     <Compile Include="Assets\Scripts\MKRF\Polygon\Manager.cs" />
-     <Compile Include="Assets\Scripts\Setup.cs" />
-     <Compile Include="Assets\Scripts\SliderController.cs" />
-     <Compile Include="Assets\Scripts\Terrain\Tree\Painter.cs" />
-     <Compile Include="Assets\Scripts\UI\Menu\Filters\Controller.cs" />
-     <Compile Include="Assets\Scripts\UI\Menu\Filters\Main\Controller.cs" />
-     <Compile Include="Assets\Scripts\UI\Menu\Filters\Main\KOP\Controller.cs" />
-     <Compile Include="Assets\Scripts\UI\Menu\Filters\Main\MKRF\Controller.cs" />
-     <Compile Include="Assets\Scripts\UI\SliderController.cs" />
-     <Compile Include="Assets\Scripts\UI\Tooltip\Controller.cs" />
+     <Compile Include="Assets\TaskParent.cs" />
      <None Include="Assets\Ayush\Resources\VSC_Heatmap_text.txt" />
      <None Include="Assets\Ayush\Resources\_VSC_Heatmap_json.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\Quantitative_Data.txt" />
      <None Include="Assets\Shaders\Component\Bar\Aggregated\Transparent.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\Shaders\Component\Bar\Aggregated\Outline.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\__Platform\_Legacy\Components\Core\Camera\Shaders\IntersectionHighlight_Advanced.shader" />
+     <None Include="Assets\AnswerLog.txt" />
+     <None Include="Assets\NoLight_ZtestOff.shader" />
      <None Include="Assets\GraniteSDK\Shaders\GraniteShaderConfig.cginc" />
      <None Include="Assets\Resources\Data\MKRF_FeatureCollection.txt" />
      <None Include="Assets\__Platform\Modules\Measure\Shaders\IntersectionHighlight_Advanced.shader" />
@@ -135,6 +126,7 @@
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\_PluginsExtensions\Granite\Shaders\GraniteUnity.cginc" />
+     <None Include="Assets\Log.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\_PluginsExtensions\Granite\Shaders\TerrainSplatmapCommon.cginc" />
      <None Include="Assets\Ayush\Resources\sample_viewpoints.txt" />
@@ -192,6 +184,15 @@
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder.Editor">
+ <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder">
+ <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder.Base">
+ <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -375,6 +376,12 @@
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="Interop.SREYELINKLib">
+ <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Assets/Plugins/Interop.SREYELINKLib.dll</HintPath>
+ </Reference>
+ <Reference Include="stdole">
+ <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Assets/Plugins/stdole.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>

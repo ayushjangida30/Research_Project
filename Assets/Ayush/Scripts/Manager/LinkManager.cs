@@ -11,6 +11,9 @@ public class LinkManager : MonoBehaviour
     public OutlineManager outlineManager;
     public ToolTipManager tooltipManager;
     public MainController mainController;
+    public AnswerController answerController;
+
+    private int viewPointSelectedCount = 0;
 
     private Dictionary<int, Vector3> polygonPos_dict = new Dictionary<int, Vector3>();
     private Dictionary<string, int> viewPointSelected_dict = new Dictionary<string, int>();
@@ -27,7 +30,7 @@ public class LinkManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("GetPos", 1.1f);
+        Invoke("GetPos", 1.5f);
     }
 
     void Update()
@@ -55,15 +58,23 @@ public class LinkManager : MonoBehaviour
             viewPointSelected_dict.Add(viewpointList[i], 0);
 
         }
+
+        // barManager.SetVisiblePolygons(new List<int>());
         print(viewPointSelected_dict.Count);
     }
 
     // Visible Polygons - Viewpoint Manager
     public void SetViewPointSelected_Visible(string id)  {
-        if(mainController.task5)    ResetViewpoints();
+        if(mainController.complexTask3)     {
+            ResetViewpoints();
+            viewPointSelectedCount++;
+        }
+        if(mainController.complexTask2)     viewPointSelectedCount++;
+            
         viewPointSelected_dict[id] = 1;
         viewPointManager.SetSelectedViewpointColor_Visible(id);
         totalVisiblePolygonsList = CheckTotalVisible();
+        if(mainController.complexTask2 || mainController.complexTask3) answerController.GetAnswer_Task1(totalVisiblePolygonsList);
         if(!invisible)  barManager.SetVisiblePolygons(totalVisiblePolygonsList);
         polygonManager.SetVisiblePolygons(totalVisiblePolygonsList);
         outlineManager.SetVisibleOutline(totalVisiblePolygonsList);
@@ -71,7 +82,8 @@ public class LinkManager : MonoBehaviour
 
     // Invisible Polygons - Viewpoint Manager
     public void SetViewPointSelected_Invisible(string id)  {
-        if(mainController.task5)    ResetViewpoints();
+        if(mainController.complexTask3)    ResetViewpoints(); 
+       
         viewPointSelected_dict[id] = 2;
         viewPointManager.SetSelectedViewpointColor_Invisible(id);
         totalVisiblePolygonsList = CheckTotalVisible();
@@ -80,7 +92,12 @@ public class LinkManager : MonoBehaviour
         outlineManager.SetVisibleOutline(totalVisiblePolygonsList);
     }
 
+    public int GetViewpointSelectedCount()  {
+        return viewPointSelectedCount;
+    }
+
     public void SetViewPointDeselected(string id)   {
+        viewPointSelectedCount--;
         viewPointSelected_dict[id] = 0;
         viewPointManager.SetDeselectedViewpointColor(id);
         totalVisiblePolygonsList = CheckTotalVisible();
@@ -93,8 +110,9 @@ public class LinkManager : MonoBehaviour
         List<int> visibleList = new List<int>();
         int count = 0;
         foreach(KeyValuePair<string, int> viewpoint in viewPointSelected_dict) {
-            // print(viewpoint.Key + " " + viewpoint.Value);
+            print(viewpoint.Key + " " + viewpoint.Value + " Linkmanage checktotalvisible");
             if(viewpoint.Value == 1 || viewpoint.Value == 2) {
+                print("Viewpoint clicked: " + viewpoint.Key);
                 List<int> tempList = new List<int>();
                 count += 1;
                 if(count > 1)   {
@@ -107,7 +125,7 @@ public class LinkManager : MonoBehaviour
                 }else{
                     if(viewpoint.Value == 1)    visibleList = visiblePolygons_dict[viewpoint.Key];
                     else                        visibleList = invisiblePolygons_dict[viewpoint.Key];
-                    
+                    print(visibleList.Count + " Visible COunt");
                 }
             }
         }
@@ -126,6 +144,7 @@ public class LinkManager : MonoBehaviour
     }
 
     public void ResetViewpoints()   {
+        viewPointSelectedCount = 0;
         for(int i = 0; i < viewpointList.Count; i++)    {
             viewPointSelected_dict[viewpointList[i]] = 0;
             viewPointManager.SetDeselectedViewpointColor(viewpointList[i]);
@@ -171,5 +190,19 @@ public class LinkManager : MonoBehaviour
             if(id == 1 || id == 2)   return key; 
         }
         return "none";
+    }
+
+    public Dictionary<string, int> GetViewpointSelectedDict()  {
+        return viewPointSelected_dict;
+    }
+
+    public void SetViewpointPos(Vector3 pos, string name)    {
+        viewPointManager.SetViewpointPos(pos, name);
+        visiblePolygons_dict = viewPointManager.GetVisiblePolygons(); 
+        invisiblePolygons_dict = viewPointManager.GetInvisiblePolygons();
+    }
+
+    public List<int> GetVisibleBars()   {
+        return CheckTotalVisible();
     }
 }   

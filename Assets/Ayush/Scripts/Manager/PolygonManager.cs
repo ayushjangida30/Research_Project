@@ -33,13 +33,13 @@ public class PolygonManager : MonoBehaviour
     }
 
     public void SetSelectedPolygonColor(string id)    {
-        if(mainController.task2)    {
+        if(mainController.task1)    {
             ResetPolygonSelected();
             dict_polygonSelected[Int32.Parse(id)] = 1;
             foreach(KeyValuePair<int, PolygonController> pair in dict_polygon)   {
                 pair.Value.SelectedPolygon(dict_polygonSelected[pair.Key]);
             }
-        }else if(mainController.task4)    {
+        }else if(mainController.task2)    {
             if(task4_count <= 1)    {
                 dict_polygonSelected[Int32.Parse(id)] = 1;
                 foreach(KeyValuePair<int, PolygonController> pair in dict_polygon)   {

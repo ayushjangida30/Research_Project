@@ -110,7 +110,7 @@ Shader "Unlit/NewUnlitShader"
                 float4 clipVertex = UnityObjectToClipPos(v.vertex);
                 float2 clipNormal = normalize(TransformViewToProjection(mul((float3x3)UNITY_MATRIX_IT_MV, v.normal)));
 
-                float2 offset = clipNormal.xy / _ScreenParams.xy * 1 * clipVertex.w * 2;
+                float2 offset = clipNormal.xy / _ScreenParams.xy * 1 * clipVertex.w * 4;
 
                 clipVertex.xy += offset;
 

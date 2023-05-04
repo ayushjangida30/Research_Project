@@ -24,6 +24,11 @@ public class _CameraController : MonoBehaviour
                 continue;
             }
 
+            if(camera_2d[i].gameObject.name == "2D_3D_2")    {
+                camera_2d[i].gameObject.GetComponent<Camera>().cullingMask = LayerMask.GetMask("Default", "TransparentFX", "Ignore Raycast", "Water", "UI", "Terrain", "MKRF", "2D_Terrain", "cube_3d_terrain_2d_2", "VQC_Mesh", "capsule_3d_terrain_2d_2");
+                continue;
+            }
+
             camera_2d[i].gameObject.GetComponent<Camera>().cullingMask = LayerMask.GetMask("Default", "TransparentFX", "Ignore Raycast", "Water", "UI", "Terrain", "MKRF", "2D_Terrain", "cube_3d_terrain_2d", "VQC_Mesh", "capsule_3d_terrain_2d");
         }
 

@@ -276,6 +276,12 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="Interop.SREYELINKLib">
+ <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Assets/Plugins/Interop.SREYELINKLib.dll</HintPath>
+ </Reference>
+ <Reference Include="stdole">
+ <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Assets/Plugins/stdole.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>

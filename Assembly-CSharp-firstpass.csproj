@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Plugins\Properties\AssemblyInfo.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
@@ -211,6 +212,15 @@
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder.Editor">
+ <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder">
+ <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder.Base">
+ <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -394,6 +404,12 @@
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="Interop.SREYELINKLib">
+ <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Assets/Plugins/Interop.SREYELINKLib.dll</HintPath>
+ </Reference>
+ <Reference Include="stdole">
+ <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Assets/Plugins/stdole.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>C:/LlamaZOO_InfoVis_Prototypes_2/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>

@@ -26,6 +26,12 @@ public class TooltipViewpointManager : MonoBehaviour
         textToolTip.text = message;
     }
 
+    public void SetToolTip(string message, Vector3 mousePosition) {
+        gameObject.SetActive(true);
+        textToolTip.text = message;
+        transform.position = mousePosition;
+    }
+
     public void HideToolTip()   {
         print("Tooltip hidden");
         gameObject.SetActive(false);
